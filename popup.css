@@ -1,0 +1,72 @@
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* popup background */
+.pop {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place when scrolling*/
+  z-index: 1001; /* in front of all other page elements */
+  padding-top: 100px; 
+  left: 0px; /*background margin*/
+  top: 0px; /*background margin*/
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgba(0,0,0,0.6); /* black, 60% opacity */
+}
+
+/* popup content */
+.pop-content {
+	z-index: 999999;
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop; /*slide down animation*/
+  -webkit-animation-duration: 1s; /*animation duration*/
+}
+
+/* animate popup */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* header */
+.pop-header {
+  padding: 20px 16px;
+  padding-top: 80px;
+  background-color: red;
+  color: white;
+}
+
+/* body */
+.pop-body {
+	padding: 10px 20px;
+	color: black;
+	}
+
+/* footer */
+.pop-footer {
+  padding: 8px 16px;
+  background-color: red;
+  color: white;
+}
+a.pop-footer {
+	color: yellow;
+}
+a.pop-footer:visited {
+	color: yellow;
+	text-decoration:none;
+}
+	
+button {
+	display: block;
+	margin: auto;
+}
